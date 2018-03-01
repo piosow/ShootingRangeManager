@@ -1,0 +1,11 @@
+C:\Users\Piotr\Source\Repos\ShootingRangeManager\ShootingRangeManager\bin\Debug\ShootingRangeManager.exe.config
+C:\Users\Piotr\Source\Repos\ShootingRangeManager\ShootingRangeManager\bin\Debug\ShootingRangeManager.exe
+C:\Users\Piotr\Source\Repos\ShootingRangeManager\ShootingRangeManager\bin\Debug\ShootingRangeManager.pdb
+C:\Users\Piotr\Source\Repos\ShootingRangeManager\ShootingRangeManager\obj\Debug\ShootingRangeManager.csprojResolveAssemblyReference.cache
+C:\Users\Piotr\Source\Repos\ShootingRangeManager\ShootingRangeManager\obj\Debug\ShootingRangeManager.frmLogin.resources
+C:\Users\Piotr\Source\Repos\ShootingRangeManager\ShootingRangeManager\obj\Debug\ShootingRangeManager.Properties.Resources.resources
+C:\Users\Piotr\Source\Repos\ShootingRangeManager\ShootingRangeManager\obj\Debug\ShootingRangeManager.csproj.GenerateResource.Cache
+C:\Users\Piotr\Source\Repos\ShootingRangeManager\ShootingRangeManager\obj\Debug\ShootingRangeManager.csproj.CoreCompileInputs.cache
+C:\Users\Piotr\Source\Repos\ShootingRangeManager\ShootingRangeManager\obj\Debug\ShootingRangeManager.exe
+C:\Users\Piotr\Source\Repos\ShootingRangeManager\ShootingRangeManager\obj\Debug\ShootingRangeManager.pdb
+C:\Users\Piotr\Source\Repos\ShootingRangeManager\ShootingRangeManager\obj\Debug\ShootingRangeManager.frmMain.resources
