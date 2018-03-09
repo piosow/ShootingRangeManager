@@ -15,6 +15,7 @@ namespace ShootingRangeManager
         public frmMain()
         {
             InitializeComponent();
+            button2.BackColor = Classes.LayoutSetting.BtnBackground;
         }
 
         private void btnCardScan_Click(object sender, EventArgs e)
