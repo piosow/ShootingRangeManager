@@ -17,9 +17,14 @@ namespace ShootingRangeManager
             InitializeComponent();
         }
 
-        private void frmMain_FormClosed(object sender, FormClosedEventArgs e)
+        private void btnCardScan_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            frmScan scan = new frmScan();
+            scan.ShowDialog();
+            if (scan.DialogResult == DialogResult.OK)
+            {
+                MessageBox.Show("ASDASDASD");
+            }
         }
     }
 }

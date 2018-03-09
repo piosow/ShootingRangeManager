@@ -16,9 +16,7 @@ namespace ShootingRangeManager
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            frmLogin login = new frmLogin();
-            login.Show();
-            Application.Run();
+            Application.Run(new frmMain());
         }
     }
 }
