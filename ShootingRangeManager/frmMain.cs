@@ -37,7 +37,7 @@ namespace ShootingRangeManager
             try
             {
                 CustomMessage customMessage = new CustomMessage();
-                customMessage.Show();
+                customMessage.ShowDialog();
 
             }
             catch (Exception ex)

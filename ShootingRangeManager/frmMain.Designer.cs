@@ -54,6 +54,8 @@
             // btnAddShooter
             // 
             this.btnAddShooter.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAddShooter.FlatAppearance.BorderSize = 0;
+            this.btnAddShooter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddShooter.Location = new System.Drawing.Point(318, 12);
             this.btnAddShooter.Name = "btnAddShooter";
             this.btnAddShooter.Size = new System.Drawing.Size(200, 100);
