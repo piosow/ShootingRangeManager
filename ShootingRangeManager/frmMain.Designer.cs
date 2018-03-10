@@ -29,7 +29,10 @@
         private void InitializeComponent()
         {
             this.btnCardScan = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnAddShooter = new System.Windows.Forms.Button();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.ssVersion = new System.Windows.Forms.ToolStripStatusLabel();
+            this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnCardScan
@@ -48,15 +51,34 @@
             this.btnCardScan.UseVisualStyleBackColor = false;
             this.btnCardScan.Click += new System.EventHandler(this.btnCardScan_Click);
             // 
-            // button2
+            // btnAddShooter
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.Location = new System.Drawing.Point(318, 12);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(200, 100);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnAddShooter.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAddShooter.Location = new System.Drawing.Point(318, 12);
+            this.btnAddShooter.Name = "btnAddShooter";
+            this.btnAddShooter.Size = new System.Drawing.Size(200, 100);
+            this.btnAddShooter.TabIndex = 2;
+            this.btnAddShooter.Text = "button2";
+            this.btnAddShooter.UseVisualStyleBackColor = true;
+            this.btnAddShooter.Click += new System.EventHandler(this.btnAddShooter_Click);
+            // 
+            // statusStrip1
+            // 
+            this.statusStrip1.BackColor = System.Drawing.SystemColors.Highlight;
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ssVersion});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 433);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(530, 22);
+            this.statusStrip1.TabIndex = 3;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // ssVersion
+            // 
+            this.ssVersion.ForeColor = System.Drawing.Color.White;
+            this.ssVersion.Name = "ssVersion";
+            this.ssVersion.Size = new System.Drawing.Size(118, 17);
+            this.ssVersion.Text = "toolStripStatusLabel1";
             // 
             // frmMain
             // 
@@ -65,19 +87,25 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(530, 455);
             this.ControlBox = false;
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.statusStrip1);
+            this.Controls.Add(this.btnAddShooter);
             this.Controls.Add(this.btnCardScan);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmMain";
             this.Text = "frmMain";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Button btnCardScan;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnAddShooter;
+        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripStatusLabel ssVersion;
     }
 }

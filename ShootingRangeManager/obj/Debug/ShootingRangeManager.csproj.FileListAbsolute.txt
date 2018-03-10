@@ -9,3 +9,4 @@ C:\Users\Piotr\Source\Repos\ShootingRangeManager\ShootingRangeManager\obj\Debug\
 C:\Users\Piotr\Source\Repos\ShootingRangeManager\ShootingRangeManager\obj\Debug\ShootingRangeManager.frmMain.resources
 C:\Users\Piotr\Source\Repos\ShootingRangeManager\ShootingRangeManager\obj\Debug\ShootingRangeManager.frmScan.resources
 C:\Users\Piotr\Source\Repos\ShootingRangeManager\ShootingRangeManager\obj\Debug\ShootingRangeManager.Controls.CustomMessage.resources
+C:\Users\Piotr\Source\Repos\ShootingRangeManager\ShootingRangeManager\obj\Debug\ShootingRangeManager.csprojResolveAssemblyReference.cache

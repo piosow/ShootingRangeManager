@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\DataBaseManager.cs" />
+    <Compile Include="Classes\ErrorHandler.cs" />
     <Compile Include="Classes\ExtensionMethods.cs" />
     <Compile Include="Classes\LayoutSetting.cs" />
     <Compile Include="Classes\Manager.cs" />
