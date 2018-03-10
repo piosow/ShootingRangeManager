@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ShootingRangeManager.Controls;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -35,52 +36,15 @@ namespace ShootingRangeManager
         {
             try
             {
-                C();
+                CustomMessage customMessage = new CustomMessage();
+                customMessage.Show();
+
             }
             catch (Exception ex)
             {
                 string message = "";
                 Classes.ErrorHandler a = new Classes.ErrorHandler(ex, out message);
                 MessageBox.Show(message + "Wciśnięcie przycisku Dodaj", "Błąd przycisku Dodaj");
-
-            }
-        }
-
-        private void A()
-        {
-            try
-            {
-                throw new Exception();
-            }
-            catch (Exception ex)
-            {
-                throw new Exception("Pierwszy",ex);
-            
-            }
-        }
-
-        private void B()
-        {
-            try
-            {
-                A();
-            }
-            catch (Exception ex)
-            {
-                throw new Exception("Drugi", ex);
-
-            }
-        }
-
-        private void C()
-        {
-            try
-            {
-                B();
-            }
-            catch (Exception ex)
-            {
-                throw new Exception("Trzeci", ex);
 
             }
         }

@@ -12,22 +12,8 @@ namespace ShootingRangeManager.Classes
         public ErrorHandler(Exception e, out string message)
         {
             string msg = "";
-            string te = GetErrorMessage(e);
-            string aaaa = GetExceptionMessages(e, msg);
-            Exception rrr = e;
-            while (rrr.InnerException != null)
-            {
-                rrr = rrr.InnerException;
-                msg += $"{rrr.Message}\n";
-            }
-                
-
-            
-            message = aaaa;
-        }
-        private string GetErrorMessage(Exception e)
-        {
-            return (e.InnerException == null) ? e.Message + "\n" : GetErrorMessage(e.InnerException);
+            string retString = GetExceptionMessages(e, msg);
+            message = retString;
         }
 
         private string GetExceptionMessages(Exception e, string msgs = "")
