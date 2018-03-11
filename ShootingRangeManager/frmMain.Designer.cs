@@ -54,14 +54,17 @@
             // btnAddShooter
             // 
             this.btnAddShooter.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAddShooter.BackColor = System.Drawing.SystemColors.Highlight;
             this.btnAddShooter.FlatAppearance.BorderSize = 0;
             this.btnAddShooter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddShooter.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnAddShooter.ForeColor = System.Drawing.Color.White;
             this.btnAddShooter.Location = new System.Drawing.Point(318, 12);
             this.btnAddShooter.Name = "btnAddShooter";
             this.btnAddShooter.Size = new System.Drawing.Size(200, 100);
             this.btnAddShooter.TabIndex = 2;
-            this.btnAddShooter.Text = "button2";
-            this.btnAddShooter.UseVisualStyleBackColor = true;
+            this.btnAddShooter.Text = "WEJŚCIE BEZ KARTY";
+            this.btnAddShooter.UseVisualStyleBackColor = false;
             this.btnAddShooter.Click += new System.EventHandler(this.btnAddShooter_Click);
             // 
             // statusStrip1

@@ -16,10 +16,30 @@ namespace ShootingRangeManager
         public frmMain()
         {
             InitializeComponent();
-            btnAddShooter.BackColor = Classes.LayoutSetting.BtnBackground;
-            btnAddShooter.ForeColor = Classes.LayoutSetting.BtnForeground;
-            btnAddShooter.Font = Classes.LayoutSetting.BtnFont;
-            ssVersion.Text = $"Wersja aplikacji: {Application.ProductVersion}";
+            SetupControls();
+
+        }
+
+        private void SetupControls()
+        {
+            try
+            {
+                //Przyciski
+                btnAddShooter.BackColor = Classes.LayoutSetting.BtnBackground;
+                btnAddShooter.ForeColor = Classes.LayoutSetting.BtnForeground;
+                btnAddShooter.Font = Classes.LayoutSetting.BtnFont;
+
+                btnCardScan.BackColor = Classes.LayoutSetting.BtnBackground;
+                btnCardScan.ForeColor = Classes.LayoutSetting.BtnForeground;
+                btnCardScan.Font = Classes.LayoutSetting.BtnFont;
+
+                //Status bar
+                ssVersion.Text = $"Wersja aplikacji: {Application.ProductVersion}";
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Ustawienie kontrolek", ex);
+            }
         }
 
         private void btnCardScan_Click(object sender, EventArgs e)
@@ -36,16 +56,16 @@ namespace ShootingRangeManager
         {
             try
             {
-                CustomMessage customMessage = new CustomMessage();
-                customMessage.ShowDialog();
+                //CustomMessage customMessage = new CustomMessage();
+                //customMessage.ShowDialog();
 
             }
             catch (Exception ex)
             {
                 string message = "";
                 Classes.ErrorHandler a = new Classes.ErrorHandler(ex, out message);
-                MessageBox.Show(message + "Wciśnięcie przycisku Dodaj", "Błąd przycisku Dodaj");
-
+                CustomMessage customMessage = new CustomMessage(CustomMessage.MessageType.Exception, "Błąd przycisku Dodaj", message + "\nWciśnięcie przycisku Dodaj");
+                customMessage.Dispose();
             }
         }
     }

@@ -13,6 +13,16 @@ namespace ShootingRangeManager.Controls
 {
     public partial class CustomMessage : Form
     {
+        public enum MessageType
+        {
+            Info,
+            Warning,
+            Exception,
+            YesNo
+        }
+
+        private MessageType _type;
+
         public CustomMessage()
         {
             InitializeComponent();
@@ -25,9 +35,19 @@ namespace ShootingRangeManager.Controls
 
         }
 
+        public CustomMessage(MessageType type, string header, string body)
+        {
+            InitializeComponent();
+            label1.Text = header;
+            richTextBox1.Text = body;
+            _type = type;
+            SetupButtons();
+            this.ShowDialog();
+        }
+
         private void CustomMessage_Paint(object sender, PaintEventArgs e)
         {
-            Pen borderPen = new Pen(LayoutSetting.BtnBackground, 2F);
+            Pen borderPen = new Pen((_type == MessageType.Exception || _type == MessageType.Warning) ? Color.Red : LayoutSetting.BtnBackground, 2F);
             e.Graphics.DrawRectangle(borderPen, e.ClipRectangle.X + 2, e.ClipRectangle.Y + 2, Width - 4, Height - 4);
             
         }
@@ -41,6 +61,28 @@ namespace ShootingRangeManager.Controls
         {
             DialogResult = DialogResult.Cancel;
             this.Close();
+        }
+
+        private void SetupButtons()
+        {
+            if (_type == MessageType.YesNo)
+            {
+                btnCancel.Visible = true;
+                btnCancel.Text = "Anuluj";
+                btnCancel.DialogResult = DialogResult.Cancel;
+
+                btnOK.Visible = true;
+                btnOK.Text = "Ok";
+                btnOK.DialogResult = DialogResult.OK;
+            }
+            else
+            {
+                btnCancel.Visible = true;
+                btnCancel.Text = "Ok";
+                btnCancel.DialogResult = DialogResult.Cancel;
+
+                btnOK.Visible = false;
+            }
         }
     }
 }
