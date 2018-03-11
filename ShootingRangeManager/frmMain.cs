@@ -54,7 +54,7 @@ namespace ShootingRangeManager
         
         private void a()
         {
-            throw new Exception("Tralalalalalallla", ex);
+            throw new Exception("Główny błąd", ex);
         }
         
         private void b()
